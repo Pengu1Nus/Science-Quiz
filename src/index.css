@@ -24,9 +24,13 @@ html {
 
 body {
   min-height: 100vh;
+  width: 100vw;
   color: var(--color-light);
   background-color: var(--color-darkest);
   padding: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app {
@@ -38,6 +42,14 @@ body {
 
 .main {
   width: 50rem;
+
+  @media (max-width: 768px) {
+    width: 30rem;
+  }
+
+  @media (max-width: 420px) {
+    width: 25rem;
+  }
 }
 
 .app-header {
@@ -60,22 +72,53 @@ body {
 
 img {
   width: 14rem;
+
+  @media (max-width: 768px) {
+    width: 10rem;
+  }
+
+  @media (max-width: 420px) {
+    display: none;
+  }
 }
 
 h1 {
   font-family: "Codystar";
   font-size: 5.6rem;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 1.5rem;
+  }
 }
 
 h2 {
   font-size: 3.6rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  @media (max-width: 420px) {
+    font-size: 2.5rem;
+  }
 }
 
 h3 {
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 4rem;
+
+  @media (max-width: 420px) {
+    font-size: 1rem;
+  }
 }
 
 h4 {
@@ -83,6 +126,12 @@ h4 {
   font-weight: 600;
   margin-bottom: 2.4rem;
   text-align: center;
+
+  @media (max-width: 420px) {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
 }
 
 .start {
@@ -100,6 +149,11 @@ h4 {
   grid-template-columns: auto auto;
   font-size: 1.8rem;
   color: var(--color-medium);
+
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
+
 }
 
 progress {
@@ -130,6 +184,10 @@ progress {
   cursor: pointer;
   border-radius: 100px;
   transition: 0.3s;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 .btn:not([disabled]):hover {

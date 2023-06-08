@@ -21,7 +21,7 @@ export const QUESTIONSDATA = [
       'Судебная',
       'Бюрократическая',
     ],
-    correctOption: 0,
+    correctOption: 2,
     points: 10,
   },
   {
